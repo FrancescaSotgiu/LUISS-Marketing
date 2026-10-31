@@ -418,7 +418,7 @@ document.addEventListener("click",function(e){var f=e.target.closest("[data-filt
 /* ---------- lessons ---------- */
 var L=[
  {n:1,t:"Marketing as value creation and STP",topics:["Marketing as value creation: dual value creation; needs, wants and demands; marketing myopia; marketing orientations","Branding as a strategic asset","The customer journey and consumer decision-making","Segmentation, targeting, differentiation and positioning; value proposition; positioning maps"],
-  prep:"Course introduction: read assessment, group project and participation rubric.",proj:"Form teams, choose a brand and a sector, and draft an initial STP strategy.",cases:["teslaferrari","basicfit","patagonia","tiffany","chatbot"],quiz:"q1"},
+  prep:"Course introduction: read assessment, group project and participation rubric.",proj:"Form teams, choose a brand and a sector, and draft an initial STP strategy.",cases:["teslaferrari","basicfit","patagonia","tiffany","chatbot"],quiz:"q1",video:"https://www.youtube.com/watch?v=sfGtw2C95Ms"},
  {n:2,t:"Customer relationships, market insights and the offer",topics:["Customer relationships: customer lifetime value, customer equity, relationship groups, customer engagement","Market research essentials: asking the right question, primary and secondary data, turning data into insights","Product and brand decisions"],
   prep:"Slides of Lessons 1 and 2. Group project update 1: team, project definition and initial STP.",proj:"Refine STP, gather market insights to support it, decide on product (and price).",cases:["sephora","nespresso","uptime","teslafiat","moncler","zara","nike"],quiz:"q2"},
  {n:3,t:"Capturing, promoting and delivering value",topics:["Product, price, place and promotion as an integrated marketing programme","From strategy to plan: objectives, KPIs and control"],
@@ -430,7 +430,7 @@ $("#lessonCards").innerHTML=L.map(function(l){return '<div class="card"><span cl
  '<p class="small"><b>Prepare:</b> '+esc(l.prep)+'</p><p class="small"><b>Project:</b> '+esc(l.proj)+'</p>'+
  (l.cases.length?'<p class="small"><b>Additional material:</b> '+l.cases.map(function(id){return '<a href="#cases">'+esc(byId[id].brand)+'</a>'}).join(", ")+'</p>':"")+
  '<div class="cta" style="justify-content:flex-start">'+(LINKS["lesson"+l.n]?'<a class="btn primary" href="'+esc(LINKS["lesson"+l.n])+'" target="_blank" rel="noopener">Lesson '+l.n+' slides ↗</a>':"")+
- '<a class="btn" href="#quizzes" data-open="'+l.quiz+'">'+(l.n<4?"Take the quiz":"Practice exam")+'</a></div></div>'}).join("");
+ (l.video?'<a class="btn" href="'+esc(l.video)+'" target="_blank" rel="noopener">Watch the video ↗</a>':"")+'<a class="btn" href="#quizzes" data-open="'+l.quiz+'">'+(l.n<4?"Take the quiz":"Practice exam")+'</a></div></div>'}).join("");
 
 /* ---------- project ---------- */
 var T=[
