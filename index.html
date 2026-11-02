@@ -3,9 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, noai, noimageai">
-<meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
-<meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
 <title>Basics of Marketing · LUISS Business School · Prof. Francesca Sotgiu</title>
 <meta name="description" content="Basics of Marketing at LUISS Business School (Master in International Management; Majors in International Management and Fashion &amp; Luxury Business): lessons, the group project, mini-cases, a worked example, quizzes and a practice exam.">
 <meta name="author" content="Prof. Francesca Sotgiu">
@@ -33,7 +30,6 @@ nav a{color:var(--ink);opacity:.8;font-size:13px;white-space:nowrap;padding:4px 
 nav a.home-link{color:var(--link);opacity:1}
 /* layout */
 main section{display:none;padding-bottom:40px}main section.on{display:block}
-.subpart{border-top:1px solid var(--line);margin-top:96px;scroll-margin-top:48px}
 .page-head,.home-hero{text-align:center;padding-block:72px 48px;display:grid;justify-items:center;gap:14px}
 .page-head h2{font-size:clamp(40px,7vw,64px)}
 .page-head p,.lede{color:var(--muted);max-width:660px;font-size:21px;line-height:1.38;margin:0}
@@ -103,6 +99,7 @@ textarea.answer{width:100%;font:inherit;font-size:16px;border:1px solid var(--li
 textarea.answer:focus{outline:2px solid var(--link);border-color:transparent}
 .tl li:before{background:var(--ink)}
 .case-card.wide{grid-column:1/-1}.case-card.wide .clean{columns:1}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch}.grade{min-width:760px;font-size:14px}.grade thead th{background:var(--accent);color:#fff;font-size:13px;padding:10px 8px}.grade thead th:first-child{border-radius:8px 0 0 0}.grade thead th:last-child{border-radius:0 8px 0 0}.grade tbody tr:nth-child(even) td{background:var(--tile)}.grade td:first-child{width:16%}
 .ansoff{margin:4px 0 14px;table-layout:fixed}.ansoff th{font-size:12px;vertical-align:middle}.ansoff td{background:var(--tile);border:2px solid #fff;border-radius:8px;font-size:13px;line-height:1.4}.ansoff th:first-child{width:22%}
 </style>
 </head>
@@ -111,7 +108,7 @@ textarea.answer:focus{outline:2px solid var(--link);border-color:transparent}
  <div class="wrap">
   <a class="brand" href="#home">Basics of Marketing<span> · LUISS</span></a>
   <nav aria-label="Course">
-   <a href="#home">Home</a><a href="#lessons">Lessons</a><a href="#cases">Extra material and AI lab</a><a href="#project">Project</a><a href="#quizzes">Quizzes</a><a class="home-link" href="https://francescasotgiu.com" target="_blank" rel="noopener">francescasotgiu.com ↗</a>
+   <a href="#home">Home</a><a href="#lessons">Lessons</a><a href="#cases">Extra material</a><a href="#project">Project</a><a href="#example">Example</a><a href="#quizzes">Quizzes</a><a href="#agent">AI lab</a><a class="home-link" href="https://francescasotgiu.com" target="_blank" rel="noopener">francescasotgiu.com ↗</a>
   </nav>
  </div>
 </header>
@@ -123,62 +120,144 @@ textarea.answer:focus{outline:2px solid var(--link);border-color:transparent}
  <div class="home-hero">
   <span class="label">LUISS Business School Amsterdam · Master in International Management · Majors in International Management and Fashion &amp; Luxury Business</span>
   <h1>Basics of Marketing.</h1>
+  <p>Marketing as dual value creation: for customers and society, and for the firm. Four lessons, a strategic marketing plan built by your team, and mini-cases from brands around the world.</p>
   <div class="cta"><a class="btn primary" href="#lessons">See the lessons</a><a class="btn" href="#quizzes">Take a quiz</a></div>
  </div>
  <div class="grid g4">
-  <div class="card stat"><div class="num">4</div><p>lessons of 3.5 hours</p></div>
-  <div class="card stat"><div class="num">18</div><p>mini-cases from global brands, as additional material</p></div>
+  <div class="card stat"><div class="num">4</div><p>lessons of 3.5 hours, 9:30 to 13:00</p></div>
+  <div class="card stat"><div class="num">18</div><p>mini-cases from global brands as additional material</p></div>
   <div class="card stat"><div class="num">10′</div><p>team presentation of your marketing plan in Lesson 4, plus Q&amp;A</p></div>
   <div class="card stat"><div class="num">20.12</div><p>deadline to upload your slides with notes, 19:00</p></div>
  </div>
  <h2 class="section-title">Everything for the course.</h2>
  <div class="grid g3">
   <a class="card" href="#lessons"><span class="label">Programme</span><h3>Lessons</h3><p class="muted">Topics, preparation and the project step for each lesson.</p><span class="more">Open</span></a>
-  <a class="card" href="#cases"><span class="label">Additional material</span><h3>Mini-cases</h3><p class="muted">Eighteen decisions, from Patagonia vs The North Face to Tesla vs Fiat, Zara and Tony's Chocolonely, plus the AI agent lab.</p><span class="more">Open</span></a>
+  <a class="card" href="#cases"><span class="label">Additional material</span><h3>Mini-cases</h3><p class="muted">Eighteen decisions, from Patagonia vs The North Face to Tesla vs Fiat, Zara and Tony's Chocolonely.</p><span class="more">Open</span></a>
   <a class="card" href="#project"><span class="label">Group project · 40%</span><h3>The plan</h3><p class="muted">The brief, the updates, the presentation and the rubric.</p><span class="more">Open</span></a>
-  <a class="card" href="#example"><span class="label">Project · worked example</span><h3>Kaapstok.nl</h3><p class="muted">How evidence, STP, CLV and the 4 Ps add up to one recommendation.</p><span class="more">Open</span></a>
+  <a class="card" href="#example"><span class="label">Worked example</span><h3>Kaapstok.nl</h3><p class="muted">How evidence, STP, CLV and the 4 Ps add up to one recommendation.</p><span class="more">Open</span></a>
   <a class="card" href="#quizzes"><span class="label">Self-test</span><h3>Quizzes</h3><p class="muted">One per lesson and a practice exam in the format of the final exam.</p><span class="more">Open</span></a>
   <div class="card"><span class="label">Assessment</span><h3>Grading</h3>
    <table><tr><td>Class participation (individual)</td><td>10%</td></tr><tr><td>Group project: strategic marketing plan, presented in class</td><td>40%</td></tr><tr><td>Final exam, closed book: multiple choice and open questions</td><td>50%</td></tr></table>
    <p class="small muted" style="margin-top:8px">A positive grade in all three is required to pass.</p></div>
  </div>
- <aside class="band" style="margin-top:20px" aria-label="Course files">
-  <div><span class="label">Course files</span><h2>Syllabus, slides and cases.</h2><p>Download the course files from Google Drive.</p></div>
-  <div class="acts">
-   <a class="btn primary" data-link="syllabus" href="" target="_blank" rel="noopener" hidden>Syllabus ↗</a>
-   <a class="btn" data-link="slides" href="" target="_blank" rel="noopener" hidden>Slides ↗</a>
-   <a class="btn" data-link="cases" href="" target="_blank" rel="noopener" hidden>Mini-cases ↗</a>
-   <a class="btn" data-link="project" href="" target="_blank" rel="noopener" hidden>Group project ↗</a>
-   <a class="btn" href="practice-exam.html">Practice exam</a>
-  </div>
+ <aside class="band" aria-label="More from Francesca Sotgiu">
+  <div><span class="label">More from Prof. Francesca Sotgiu</span><h2>Courses, research and tools.</h2><p>Other courses, publications and the Marketing Decision Studio, an interactive workspace to work through a marketing decision step by step.</p></div>
+  <div class="acts"><a class="btn primary" href="https://francescasotgiu.com" target="_blank" rel="noopener">Visit francescasotgiu.com</a><a class="btn" href="https://francescasotgiu.com/tools/marketing-decision-studio/" target="_blank" rel="noopener">Decision Studio ↗</a></div>
  </aside>
 </section>
 
 <!-- LESSONS -->
 <section id="lessons">
- <div class="page-head"><span class="label">Detailed programme</span><p>Three content lessons build the marketing plan step by step, while in the fourth, every team presents and defends its plan.</p></div>
+ <div class="page-head"><span class="label">Detailed programme</span><h2>Four lessons. One plan.</h2><p>Three content lessons build the marketing plan step by step. In the fourth, every team presents and defends its plan.</p></div>
  <div class="grid g2" id="lessonCards"></div>
  <h2 class="section-title">Before every lesson.</h2>
  <div class="grid g3">
-  <div class="card"><h3>Read the slides</h3><p class="muted">The instructor's slides are the primary material for the course and the exam. Chapters 1, 2, 3, 5, 9, 10, 12, 13, 14, 15 and 17 of the open-source <a href="https://openstax.org/books/principles-marketing" target="_blank" rel="noopener">Principles of Marketing</a> (OpenStax) support them.</p><a class="btn" data-link="slides" href="" target="_blank" rel="noopener" hidden>Open the slides ↗</a></div>
+  <div class="card"><h3>Read the slides</h3><p class="muted">The instructor's slides are the primary material for the course and the exam. Chapters 1, 2, 3, 5, 9, 10, 12, 13, 14, 15 and 17 of the open-source <a href="https://openstax.org/books/principles-marketing" target="_blank" rel="noopener">Principles of Marketing</a> (OpenStax) support them.</p></div>
   <div class="card"><h3>Prepare your update</h3><p class="muted">Lessons 2 and 3 open with a short oral project update from each team. Not graded, but it is where you get feedback.</p></div>
-  <div class="card"><h3>Write three questions</h3><p class="muted">At the end of each lesson, write three exam questions.</p></div>
+  <div class="card"><h3>Write three questions</h3><p class="muted">At the end of each lesson, add three exam questions with a model answer to the shared question bank. If a GenAI tool helps you draft them, add your prompt. Before the exam, filter it by lesson or topic to study.</p><a class="btn primary" href="https://docs.google.com/spreadsheets/d/1Wm0iXHgSsQBW1VXZcS7cM5ijtW-ulig5b2wqA-5YvSU/edit" target="_blank" rel="noopener">Open the question bank ↗</a></div>
  </div>
 </section>
 
 <!-- MINI-CASES -->
 <section id="cases">
- <div class="page-head"><span class="label">Additional material · Mini-cases</span><p>Global brands, each facing one decision. Put yourself in the manager's position: decide, applying the course frameworks to defend your choice. Use them to prepare for class and for the exam.</p></div>
+ <div class="page-head"><span class="label">Additional material · Mini-cases</span><h2>Real brands. Real decisions.</h2><p>Global, European and Italian brands, each facing one decision. Put yourself in the manager's position: decide first, then use the course frameworks to defend your choice. Use them to prepare for class and for the exam.</p></div>
  <div class="filters" role="group" aria-label="Filter by lesson">
   <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button><button class="chip" type="button" data-filter="1" aria-pressed="false">Lesson 1</button><button class="chip" type="button" data-filter="2" aria-pressed="false">Lesson 2</button><button class="chip" type="button" data-filter="3" aria-pressed="false">Lesson 3</button>
  </div>
  <div class="grid g2" id="caseCards"></div>
- <p class="small muted" style="text-align:center;max-width:720px;margin:32px auto 0">The mini-cases summarise publicly reported facts for teaching, while the discussion questions are hypothetical decisions.</p>
- <aside class="band" style="margin-top:56px" aria-label="Louis Vuitton case">
-  <div><span class="label">Class case · Lesson 3 · Luxury and the 4 Ps</span><h2>Louis Vuitton: the Graffiti Défilé.</h2><p>Graffiti on the 1896 Monogram canvas. Decide which lines, colours, prices, quantities, stores and press focus go to the product committee, and defend it.</p></div>
-  <div class="acts"><a class="btn primary" href="louis-vuitton.html">Open the case</a><a class="btn" href="louis-vuitton-decision-sheet.xlsx" download>Decision sheet (.xlsx)</a></div>
+ <p class="small muted" style="text-align:center;max-width:720px;margin:32px auto 0">The mini-cases summarise publicly reported facts for teaching. The discussion questions are hypothetical decisions, not descriptions of what the companies plan to do.</p>
+</section>
+
+<!-- PROJECT -->
+<section id="project">
+ <div class="page-head"><span class="label">Group project · 40%</span><h2>A strategic marketing plan.</h2><p>In teams, build a marketing plan for a real or fictional brand in a sector you choose. You start in class in every lesson and continue at home. In Lesson 4 you present it in 10 minutes and defend it in the Q&amp;A.</p></div>
+ <div class="grid g2">
+  <div class="card">
+   <h3>What the plan covers</h3>
+   <ul class="clean">
+    <li><b>STP summary:</b> segments, target and positioning, with a positioning map.</li>
+    <li><b>Brand identity and value proposition:</b> why your target chooses you, at the level of benefits and values.</li>
+    <li><b>4 Ps plan with KPIs:</b> product, price, place and promotion as one programme, with objectives and targets.</li>
+    <li><b>Insights from data:</b> the market insights and sources behind your choices.</li>
+    <li><b>GenAI prompts:</b> every prompt you used, in the slide notes.</li>
+   </ul>
+  </div>
+  <div class="card">
+   <h3>Choosing your brand</h3>
+   <p class="muted small">Launch a new brand or fix a marketing problem of an existing one. A good project names a brand, a decision and a trade-off. Some starting points:</p>
+   <ul class="clean">
+    <li>Should a heritage luxury house launch its own resale and repair service?</li>
+    <li>How should a European premium food or beverage brand position itself to enter Japan or the US?</li>
+    <li>Can a young luxury label grow without losing exclusivity?</li>
+    <li>How can a fashion brand prove that its supply chain is fair and communicate it with claims that are specific and verifiable?</li>
+   </ul>
+  </div>
+ </div>
+ <aside class="band" style="margin-top:20px" aria-label="Group projects folder">
+  <div><span class="label">Shared folder</span><h2>See every team's work.</h2><p>Each team uploads its slides, with notes, references and GenAI prompts, to its own subfolder by 20 December, 19:00. Everyone in the class can open every team's work: the exam can include the group presentations.</p></div>
+  <div class="acts"><a class="btn primary" href="https://drive.google.com/drive/folders/1SDoP6Rmn5j0mJmhj2377Z8IixKDDk3ML" target="_blank" rel="noopener">Open the group projects folder ↗</a></div>
  </aside>
- <div id="agent" class="subpart">
+ <h2 class="section-title">The project, step by step.</h2>
+ <ul class="tl" id="timeline"></ul>
+ <h2 class="section-title">How it is assessed.</h2>
+ <div class="grid g2">
+  <div class="card"><h3>Rubric</h3><table id="rubric"></table><p class="small" style="margin-top:12px"><a href="#project" onclick="var d=document.getElementById('grading');d.open=true;d.scrollIntoView({behavior:'smooth'});return false">See the full grading grid ›</a></p></div>
+  <div class="card">
+   <h3>Use of generative AI</h3>
+   <p class="small"><b>Allowed:</b> finding information on your topic, drafting an outline to organise your thoughts, checking grammar and style.</p>
+   <p class="small"><b>Not allowed:</b> completing your part of the project unless agreed by the group, writing a draft of an assignment, writing entire sentences, paragraphs or slides.</p>
+   <p class="small"><b>Always:</b> document and cite every use according to the Luiss Business School AI Policy, and include your prompts in the slide notes. You are responsible for what you submit.</p>
+   <p class="small muted">The final exam can also include material from the group presentations, so take notes during Lesson 4.</p>
+  </div>
+ </div>
+ <details id="grading" style="margin-top:20px"><summary>Group project assessment: the full grading grid (score bands out of 30)</summary><div class="in"><div class="tscroll"><table class="grade"><thead><tr><th>Criteria</th><th>28–30 (Excellent)</th><th>25–27 (Good)</th><th>21–24 (Satisfactory)</th><th>18–20 (Sufficient)</th><th>&lt;18 (Fail)</th></tr></thead><tbody><tr><td><b>Content &amp; Analysis</b></td><td>Deep, accurate, well-supported; excellent STP, brand identity, 4Ps.</td><td>Solid and logical; minor gaps.</td><td>Basic; some weaknesses in logic/data.</td><td>Minimal analysis; weak connections.</td><td>Superficial or wrong.</td></tr><tr><td><b>Creativity &amp; Originality</b></td><td>Highly innovative, adds clear value.</td><td>Some creative ideas, mostly relevant.</td><td>Limited creativity; conventional.</td><td>Rare creative effort.</td><td>No originality.</td></tr><tr><td><b>Professional Deliverables</b></td><td>Polished, well-structured, client-ready.</td><td>Clear and professional with minor errors.</td><td>Understandable but formatting issues.</td><td>Poorly structured; not polished.</td><td>Very poor, unreadable.</td></tr><tr><td><b>Presentation Skills</b></td><td>Engaging, confident, smooth teamwork.</td><td>Clear, mostly confident; most members participate.</td><td>Uneven; some dominate.</td><td>Disorganized; weak delivery.</td><td>Very poor; little/no contribution.</td></tr><tr><td><b>Q&amp;A &amp; Reflection</b></td><td>Strong, evidence-based answers; critical reflection.</td><td>Adequate answers; some reflection.</td><td>Weak answers; superficial reflection.</td><td>Minimal or incomplete answers.</td><td>Cannot respond; no reflection.</td></tr></tbody></table></div></div></details>
+</section>
+
+<!-- EXAMPLE -->
+<section id="example">
+ <div class="page-head"><span class="label">Worked example · fictional teaching data</span><h2>Real or Rendered?</h2><p>Should Kaapstok.nl, a Dutch online marketplace, use AI-generated images in its campaigns? A short story on top of full evidence: every number in the recommendation is traceable to the research.</p></div>
+ <div class="note" style="max-width:720px;margin:0 auto">Kaapstok.nl, its figures, survey, interviews and experiment are fictional and written for teaching. Your plan must cite real sources. Your presentation is 10 minutes, so it can go a little deeper than these six slides.</div>
+ <h2 class="section-title">Six slides. One recommendation.</h2>
+ <div class="grid g3" id="mainDeck"></div>
+ <h2 class="section-title">The evidence behind it.</h2>
+ <div class="grid g2">
+  <div class="card">
+   <span class="label">Appendix · Online experiment</span>
+   <h3>Hiding AI backfires, labelling it does not</h3>
+   <p class="small muted">2 × 2 between-subjects, n = 412. Purchase intent (1 to 7) after shoppers learn the image origin. Interaction F(1, 408) = 9.7, p = .002.</p>
+   <table>
+    <tr><th></th><th>No label</th><th>Labelled</th></tr>
+    <tr><td><b>Real photo</b></td><td>4.9<br><span class="small muted">trust 5.4 · CTR 100</span></td><td>5.0<br><span class="small muted">trust 5.5 · CTR 101</span></td></tr>
+    <tr><td><b>AI image</b></td><td style="background:var(--badbg)">4.2<br><span class="small muted">trust 4.6 · CTR 109</span></td><td>4.8<br><span class="small muted">trust 5.3 · CTR 102</span></td></tr>
+   </table>
+   <p class="small" style="margin-top:12px"><b>Read it like a manager:</b> hidden AI wins the click (CTR 109) and loses the sale. Optimising on clicks alone would have picked the worst option.</p>
+  </div>
+  <div class="card">
+   <span class="label">Appendix · Customer lifetime value</span>
+   <h3>What a small drop in retention costs</h3>
+   <p class="small muted">CLV = m × r / (1 + d − r), with d = 8%. Move the slider to change retention for every segment.</p>
+   <label class="small" for="rshift">Retention change: <b id="rlab">0 points</b></label>
+   <input id="rshift" type="range" min="-8" max="4" step="1" value="0">
+   <table id="clvTable" style="margin-top:8px"></table>
+   <p class="small" style="margin-top:10px">At −4 points (the hidden AI scenario) the weighted CLV falls about 17%. Which segment loses most in euros, and why does the plan target it?</p>
+  </div>
+ </div>
+ <h2 class="section-title">The full analysis.</h2>
+ <p class="section-sub">Open each part to see what it contributed to the decision. Use the tools that answer your question, and skip the rest.</p>
+ <div id="appendix"></div>
+</section>
+
+<!-- QUIZZES -->
+<section id="quizzes">
+ <div id="quizList">
+  <div class="page-head"><span class="label">Self-test</span><h2>Test yourself.</h2><p>One quiz per lesson, with explanations after every answer, and a practice exam with multiple-choice and open questions. Nothing is recorded.</p></div>
+  <div class="grid g2" id="quizCards"></div>
+ </div>
+ <div id="quizRun" class="qwrap" hidden style="padding-top:56px"></div>
+</section>
+
+<!-- AGENT LAB -->
+<section id="agent">
  <div class="page-head"><span class="label">Optional extra · AI and marketing</span><h2>The human in the loop decides.</h2><p>An AI agent can write a hundred posts an hour. It cannot tell whether a claim is true, whether a discount damages the brand, or whether a message lands in another culture. That judgement is marketing.</p></div>
  <div class="grid g2">
   <div class="card">
@@ -213,96 +292,7 @@ textarea.answer:focus{outline:2px solid var(--link);border-color:transparent}
  <h2 class="section-title">Be the human in the loop.</h2>
  <p class="section-sub" style="max-width:720px">An agent for <b>Maison Arno</b>, a fictional Florentine leather goods house, produced the drafts below. Its brief says: bags are designed and assembled in Florence, leather comes from certified tanneries in Tuscany and Spain, and the brand never discounts its icons. Which check fails? Pick one or more, then reveal.</p>
  <div id="flags"></div>
- </div>
 </section>
-
-<!-- PROJECT -->
-<section id="project">
- <div class="page-head"><span class="label">Group project · 40%</span><h2>A strategic marketing plan.</h2><p>In teams, build a marketing plan for a real or fictional brand in a sector you choose. You start in class in every lesson and continue at home. In Lesson 4 you present it in 10 minutes and defend it in the Q&amp;A.</p></div>
- <div class="grid g2">
-  <div class="card">
-   <h3>What the plan covers</h3>
-   <ul class="clean">
-    <li><b>STP summary:</b> segments, target and positioning, with a positioning map.</li>
-    <li><b>Brand identity and value proposition:</b> why your target chooses you, at the level of benefits and values.</li>
-    <li><b>4 Ps plan with KPIs:</b> product, price, place and promotion as one programme, with objectives and targets.</li>
-    <li><b>Insights from data:</b> the market insights and sources behind your choices.</li>
-    <li><b>GenAI prompts:</b> every prompt you used, in the slide notes. </li>
-    <li><b>Carbon footprint:</b> the computation of the carbon footprint. </li>
-   </ul>
-  </div>
-  <div class="card">
-   <h3>Choosing your brand</h3>
-   <p class="muted small">Launch a new brand or fix a marketing problem of an existing one. A good project names a brand, a decision and a trade-off. Some starting points:</p>
-   <ul class="clean">
-    <li>Should a heritage luxury house launch its own resale and repair service?</li>
-    <li>How should a European premium food or beverage brand position itself to enter Japan or the US?</li>
-    <li>Can a young luxury label grow without losing exclusivity?</li>
-    <li>How can a fashion brand prove that its supply chain is fair and communicate it with claims that are specific and verifiable?</li>
-   </ul>
-  </div>
- </div>
- <h2 class="section-title">The project, step by step.</h2>
- <ul class="tl" id="timeline"></ul>
- <h2 class="section-title">How it is assessed.</h2>
- <div class="grid g2">
-  <div class="card"><h3>Rubric</h3><table id="rubric"></table></div>
-  <div class="card">
-   <h3>Use of generative AI</h3>
-   <p class="small"><b>Allowed:</b> finding information on your topic, drafting an outline to organise your thoughts, checking grammar and style.</p>
-   <p class="small"><b>Not allowed:</b> completing your part of the project unless agreed by the group, writing a draft of an assignment, writing entire sentences, paragraphs or slides.</p>
-   <p class="small"><b>Always:</b> document and cite every use according to the Luiss Business School AI Policy, and include your prompts in the slide notes. You are responsible for what you submit.</p>
-   <p class="small muted">The final exam can also include material from the group presentations, so take notes during Lesson 4.</p>
-  </div>
- </div>
- <div id="example" class="subpart">
- <div class="page-head"><span class="label">Worked example · fictional teaching data</span><h2>Real or Rendered?</h2><p>Should Kaapstok.nl, a Dutch online marketplace, use AI-generated images in its campaigns? A short story on top of full evidence: every number in the recommendation is traceable to the research.</p></div>
- <div class="note" style="max-width:720px;margin:0 auto">Kaapstok.nl, its figures, survey, interviews and experiment are fictional and written for teaching. Your plan must cite real sources. Your presentation is 10 minutes, so it can go a little deeper than these six slides.</div>
- <aside class="band" style="margin:28px 0 0" aria-label="Kaapstok slides">
-  <div><span class="label">The full deck · 25 slides</span><h2>See it as a presentation.</h2><p>The six main slides plus the appendix with the full audit and research, as presented in class. Use it as a model for the structure of your own group presentation.</p></div>
-  <div class="acts"><a class="btn primary" href="kaapstok-audit.pdf" target="_blank" rel="noopener">View the slides (PDF) ↗</a><a class="btn" href="kaapstok-audit.pptx" download>Download PowerPoint</a></div>
- </aside>
- <h2 class="section-title">Six slides. One recommendation.</h2>
- <div class="grid g3" id="mainDeck"></div>
- <h2 class="section-title">The evidence behind it.</h2>
- <div class="grid g2">
-  <div class="card">
-   <span class="label">Appendix · Online experiment</span>
-   <h3>Hiding AI backfires, labelling it does not</h3>
-   <p class="small muted">2 × 2 between-subjects, n = 412. Purchase intent (1 to 7) after shoppers learn the image origin. Interaction F(1, 408) = 9.7, p = .002.</p>
-   <table>
-    <tr><th></th><th>No label</th><th>Labelled</th></tr>
-    <tr><td><b>Real photo</b></td><td>4.9<br><span class="small muted">trust 5.4 · CTR 100</span></td><td>5.0<br><span class="small muted">trust 5.5 · CTR 101</span></td></tr>
-    <tr><td><b>AI image</b></td><td style="background:var(--badbg)">4.2<br><span class="small muted">trust 4.6 · CTR 109</span></td><td>4.8<br><span class="small muted">trust 5.3 · CTR 102</span></td></tr>
-   </table>
-   <p class="small" style="margin-top:12px"><b>Read it like a manager:</b> hidden AI wins the click (CTR 109) and loses the sale. Optimising on clicks alone would have picked the worst option.</p>
-  </div>
-  <div class="card">
-   <span class="label">Appendix · Customer lifetime value</span>
-   <h3>What a small drop in retention costs</h3>
-   <p class="small muted">CLV = m × r / (1 + d − r), with d = 8%. Move the slider to change retention for every segment.</p>
-   <label class="small" for="rshift">Retention change: <b id="rlab">0 points</b></label>
-   <input id="rshift" type="range" min="-8" max="4" step="1" value="0">
-   <table id="clvTable" style="margin-top:8px"></table>
-   <p class="small" style="margin-top:10px">At −4 points (the hidden AI scenario) the weighted CLV falls about 17%. Which segment loses most in euros, and why does the plan target it?</p>
-  </div>
- </div>
- <h2 class="section-title">The full analysis.</h2>
- <p class="section-sub">Open each part to see what it contributed to the decision. Use the tools that answer your question, and skip the rest.</p>
- <div id="appendix"></div>
- </div>
-</section>
-
-
-<!-- QUIZZES -->
-<section id="quizzes">
- <div id="quizList">
-  <div class="page-head"><span class="label">Self-test</span><h2>Test yourself.</h2><p>One quiz per lesson, with explanations after every answer, and a practice exam with multiple-choice and open questions. Nothing is recorded.</p></div>
-  <div class="grid g2" id="quizCards"></div>
- </div>
- <div id="quizRun" class="qwrap" hidden style="padding-top:56px"></div>
-</section>
-
 
 </main>
 
@@ -313,27 +303,12 @@ textarea.answer:focus{outline:2px solid var(--link);border-color:transparent}
 var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
 var esc=function(t){return String(t).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
 
-/* ---------- COURSE LINKS: paste or change a link between the quotes. An empty link hides its button. ---------- */
-var LINKS={
- syllabus:"https://drive.google.com/drive/folders/1Gx2U7MplTw9yqP-LXj1MSObHyhz_cYum",
- slides:"https://drive.google.com/drive/folders/1RjtvJs3LwA47qB_I_AALCQ1WdFHVW8mp",
- cases:"",
- project:"https://drive.google.com/drive/folders/1xZUFKU--vw5NbFd3UUMdMH5JB6MLeAC-",
- /* Slides for each lesson: in Drive, right-click the file, Share, Copy link, and paste it here. */
- lesson1:"",
- lesson2:"",
- lesson3:"",
- lesson4:""
-};
-$$("[data-link]").forEach(function(a){var u=LINKS[a.getAttribute("data-link")];if(u){a.href=u;a.hidden=false}});
-
 /* ---------- routing ---------- */
-var routes=["home","lessons","cases","project","quizzes"];
-var SUB={example:"project",agent:"cases"};
-function route(){var h=(location.hash||"#home").slice(1),sub=SUB[h]?h:null;if(sub)h=SUB[h];if(routes.indexOf(h)<0)h="home";
+var routes=["home","lessons","cases","project","example","quizzes","agent"];
+function route(){var h=(location.hash||"#home").slice(1);if(routes.indexOf(h)<0)h="home";
  $$("main section").forEach(function(s){s.classList.toggle("on",s.id===h)});
  $$("nav a").forEach(function(a){if(a.getAttribute("href")==="#"+h)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
- if(h!=="quizzes")closeQuiz();window.scrollTo(0,0);if(sub){var el=document.getElementById(sub);if(el)setTimeout(function(){el.scrollIntoView()},0);}}
+ if(h!=="quizzes")closeQuiz();window.scrollTo(0,0);}
 window.addEventListener("hashchange",route);
 
 /* ---------- mini-cases ---------- */
@@ -424,20 +399,18 @@ document.addEventListener("click",function(e){var f=e.target.closest("[data-filt
 /* ---------- lessons ---------- */
 var L=[
  {n:1,t:"Marketing as value creation and STP",topics:["Marketing as value creation: dual value creation; needs, wants and demands; marketing myopia; marketing orientations","Branding as a strategic asset","The customer journey and consumer decision-making","Segmentation, targeting, differentiation and positioning; value proposition; positioning maps"],
-  prep:"Course introduction: read assessment, group project and participation rubric.",proj:"Form teams, choose a brand and a sector, and draft an initial STP strategy.",cases:["teslaferrari","basicfit","patagonia","tiffany","chatbot"],quiz:"q1",video:"https://www.youtube.com/watch?v=sfGtw2C95Ms"},
+  prep:"Course introduction: Read assessment, group project and participation rubric.",proj:"Form teams, choose a brand and a sector, and draft an initial STP strategy.",cases:["teslaferrari","basicfit","patagonia","tiffany","chatbot"],quiz:"q1"},
  {n:2,t:"Customer relationships, market insights and the offer",topics:["Customer relationships: customer lifetime value, customer equity, relationship groups, customer engagement","Market research essentials: asking the right question, primary and secondary data, turning data into insights","Product and brand decisions"],
   prep:"Slides of Lessons 1 and 2. Group project update 1: team, project definition and initial STP.",proj:"Refine STP, gather market insights to support it, decide on product (and price).",cases:["sephora","nespresso","uptime","teslafiat","moncler","zara","nike"],quiz:"q2"},
  {n:3,t:"Capturing, promoting and delivering value",topics:["Product, price, place and promotion as an integrated marketing programme","From strategy to plan: objectives, KPIs and control"],
-  prep:"Slides of Lessons 1 to 3. Group project update 2: STP and market insights, first directions for the 4 Ps.",proj:"Build the 4 Ps plan with KPIs.",cases:["bottega","heineken","adidas","prada","tonys","supplychain"],quiz:"q3",lv:true},
+  prep:"Slides of Lessons 1 to 3. Group project update 2: STP and market insights, first directions for the 4 Ps.",proj:"Build the 4 Ps plan with KPIs.",cases:["bottega","heineken","adidas","prada","tonys","supplychain"],quiz:"q3"},
  {n:4,t:"Group project presentations",topics:["A 10-minute presentation per team, followed by Q&A and feedback","The graded deliverable of the group project"],
   prep:"Slides of Lessons 1 to 3. Your strategic marketing plan: STP summary, brand identity and value proposition, 4 Ps with KPIs, insights from data, GenAI prompts in the slide notes.",proj:"Present and defend your plan. Take notes on the other teams: the exam can include them.",cases:[],quiz:"q4"}];
 var byId={};C.forEach(function(c){byId[c.id]=c});
 $("#lessonCards").innerHTML=L.map(function(l){return '<div class="card"><span class="label">Lesson '+l.n+' · 9:30 to 13:00</span><h3>'+esc(l.t)+'</h3><ul class="clean small">'+l.topics.map(function(x){return "<li>"+esc(x)+"</li>"}).join("")+'</ul>'+
  '<p class="small"><b>Prepare:</b> '+esc(l.prep)+'</p><p class="small"><b>Project:</b> '+esc(l.proj)+'</p>'+
  (l.cases.length?'<p class="small"><b>Additional material:</b> '+l.cases.map(function(id){return '<a href="#cases">'+esc(byId[id].brand)+'</a>'}).join(", ")+'</p>':"")+
- (l.lv?'<p class="small"><b>Class case:</b> <a href="louis-vuitton.html">Louis Vuitton: the Graffiti Défilé</a> (<a href="louis-vuitton-decision-sheet.xlsx" download>decision sheet</a>)</p>':"")+
- '<div class="cta" style="justify-content:flex-start">'+(LINKS["lesson"+l.n]?'<a class="btn primary" href="'+esc(LINKS["lesson"+l.n])+'" target="_blank" rel="noopener">Lesson '+l.n+' slides ↗</a>':"")+
- (l.video?'<a class="btn" href="'+esc(l.video)+'" target="_blank" rel="noopener">Watch the video ↗</a>':"")+'<a class="btn" href="#quizzes" data-open="'+l.quiz+'">'+(l.n<4?"Take the quiz":"Practice exam")+'</a></div></div>'}).join("");
+ '<a class="btn" href="#quizzes" data-open="'+l.quiz+'">'+(l.n<4?"Take the quiz":"Practice exam")+'</a></div>'}).join("");
 
 /* ---------- project ---------- */
 var T=[
@@ -536,10 +509,9 @@ q4:{title:"Practice exam",s:"Lessons 1 to 3",desc:"Ten multiple-choice questions
  {q:"Which pair is consistent with a luxury positioning?",o:["Intensive distribution and frequent discounts","Selective distribution and prestige pricing","Mass advertising and penetration pricing","Exclusive distribution and price promotions in supermarkets"],a:1,e:"Integration: a luxury position needs controlled distribution and a price that signals value."},
  {q:"KPIs in a marketing plan are used to…",o:["Replace the positioning statement","Measure progress towards objectives and trigger corrective action","Decide the brand name","Segment the market"],a:1,e:"KPIs operationalise objectives, so that the plan can be monitored and controlled."},
  {open:true,q:"Ferrari deliberately produces fewer cars than the market demands. Using the concept of dual value creation, explain which value this creates for customers and for the firm, and name one risk. (Around 120 words.)",m:"For customers, scarcity creates exclusivity and status: owning a Ferrari signals belonging to a small group, waiting lists increase desire, and controlled supply protects residual values, so the car keeps its worth. For the firm, scarcity supports high prices and margins, strengthens brand equity, and lets Ferrari choose and reward loyal clients. The brand captures value beyond cars through licensing and sponsorship, because it is known by many but owned by few. A risk: if supply is too restricted, frustrated clients may switch to competitors, and the firm leaves short-term revenue on the table; if supply grows too much, exclusivity and price power erode. The balance must be managed with data on demand, retention and residual values."},
- {open:true,q:"You manage Heineken 0.0 in Spain. Write a positioning statement and two KPIs for the first year, and explain how one of the 4 Ps supports the positioning. (Around 120 words.)",m:"Positioning: For young professionals in Italian cities who want to enjoy a beer with friends and stay sharp, Heineken 0.0 is the alcohol-free beer for every occasion, because it carries the taste and brand of Heineken without the alcohol. KPIs: aided brand awareness among the target, from a baseline to a set target by year end; and distribution in bars and restaurants (number of outlets serving it on tap or in bottle). Supporting P: place. Being available in the bars where the target meets, next to regular beer and at a similar price, makes 0.0 a normal choice rather than a compromise. Promotion through the Formula 1 partnership and the When You Drive, Never Drink campaign then pulls demand into those outlets."}]}};
+ {open:true,q:"You manage Heineken 0.0 in Italy. Write a positioning statement and two KPIs for the first year, and explain how one of the 4 Ps supports the positioning. (Around 120 words.)",m:"Positioning: For young professionals in Italian cities who want to enjoy a beer with friends and stay sharp, Heineken 0.0 is the alcohol-free beer for every occasion, because it carries the taste and brand of Heineken without the alcohol. KPIs: aided brand awareness among the target, from a baseline to a set target by year end; and distribution in bars and restaurants (number of outlets serving it on tap or in bottle). Supporting P: place. Being available in the bars where the target meets, next to regular beer and at a similar price, makes 0.0 a normal choice rather than a compromise. Promotion through the Formula 1 partnership and the When You Drive, Never Drink campaign then pulls demand into those outlets."}]}};
 
-$("#quizCards").innerHTML=Object.keys(Q).map(function(k){var z=Q[k],n=z.items.length;return '<div class="card"><span class="label">'+z.s+'</span><h3>'+esc(z.title)+'</h3><p class="muted small">'+esc(z.desc)+'</p><p class="small muted">'+n+' questions</p><button class="btn primary" type="button" data-start="'+k+'">Start</button></div>'}).join("")+
- '<div class="card"><span class="label">Full practice exam · 60 minutes</span><h3>Maison Arno: one bag, two markets</h3><p class="muted small">One luxury case in the format of the final exam: entering Japan or the UAE, and sustainability claims. Model answers and scoring guides included.</p><p class="small muted">12 multiple-choice and 5 open questions</p><a class="btn primary" href="practice-exam.html">Open the practice exam</a></div>';
+$("#quizCards").innerHTML=Object.keys(Q).map(function(k){var z=Q[k],n=z.items.length;return '<div class="card"><span class="label">'+z.s+'</span><h3>'+esc(z.title)+'</h3><p class="muted small">'+esc(z.desc)+'</p><p class="small muted">'+n+' questions</p><button class="btn primary" type="button" data-start="'+k+'">Start</button></div>'}).join("");
 
 var run=null;
 function startQuiz(k){run={k:k,items:Q[k].items,i:0,score:0,ans:[],perm:{},done:false};$("#quizList").hidden=true;$("#quizRun").hidden=false;renderQ();window.scrollTo(0,0)}
